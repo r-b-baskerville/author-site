@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
+
+<div id="nav-placeholder">
+    <script>
+        fetch("nav.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+        })
+    </script>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-8 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Roland Cam</h1>
+    <!-- <p>Published Author.</p> -->
+    <!-- <img src="images/roland-stylised.PNG" alt="Roland Cam" class="w3-image" width="992" height="1108"> -->
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About the Author</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I write in my 'pen name' to retain a small measure of privacy but that doesn't mean I am not interested in your feedback and comments - I shall give them my every, appropriate attention. 
+
+'Hell Hides in Many Hollows' is a short work [9 Chapters including a photograph library] and it tells the 'true story' of a WWII Ukrainian Displaced Person and refugee, Michael Spiwak, who left home at the age of just 16 years - and didn't see any of his family in Ukraine again until fifty years later. By the time he got back, most had been killed by German or Russian soldiers.
+
+The book is a timely reminder that wars affect so many people as well as the combatants who fight in them, and as Ukraine fends off invasion, once again, it's a poignant reminder of how the 'civil liberties' so many of us take for granted may so quickly be lost in any country that finds itself occupied by another.
+
+My main focus is Fictional Horror, and this astonishing true story is not 'out of place' alongside the other works I may add soon. In its own way, it's even more horrific because it is absolutely true that it took place. It contains description and reference to a grisly execution forced workers were compelled to witness.
+
+Mostly, I write to entertain, and to provide enjoyment and intrigue - often by building creative works around real life facts, beliefs and artefacts. 
+
+I do hope you find enjoyment in my work and thank you for your ongoing interest and support.
+
+My own story includes a long transition from soldier to peripatetic teacher, and I draw on life experience and qualifications in psychology, teaching and religion to bring a measure of credibility to the fiction I write around the occult and other dark forces at large.
+    </p>
+
+        <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Reviews</h3>  
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>Hell Hides in many Hollows</p><br>
+    
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p>
+  <!-- End About Section -->
+  </div>
+
+
+      <!-- Portfolio Section -->
+  <section class="w3-padding-64 w3-content" id="books">
+    <h2 class="w3-text-light-grey">Latest Works</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-item">
+                <a href="book1.html">
+                    <img src="images/hell-hides-in-many-hollows.jpg">
+                </a>
+                <h3 class = "carousel-book-title">Hell Hides in many Hollows</h3>
+                <p><a href="https://www.amazon.co.uk/Hell-Hides-many-Hollows-Roland-ebook/dp/B0D7QHGHSQ?ref_=ast_author_mpb" target=""_blank>Available on Amazon</a></p>
+            </div>
+            <div class="carousel-item">
+                <a href="book2.html">
+                    <img src="images/rome-cult-background.PNG">
+                </a>
+                <h3 class = "carousel-book-title">Book Coming Soon!</h3>
+                <p><a href="https://www.amazon.co.uk/Hell-Hides-many-Hollows-Roland-ebook/dp/B0D7QHGHSQ?ref_=ast_author_mpb" target=""_blank>Available on Amazon</a></p>
+            </div>
+            <!--Add more books here-->
+        </div>
+        <button class="carousel-button prev">&#10094</button>
+        <button class="carousel-button next">&#10095</button>
+    </div>
+
+    <!-- Grid for books -->
+    <!-- <div class="w3-row-padding" style="margin:0 -16px">
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br> -->
+    
+    <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+    <!-- <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button> -->
+    
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16 w3-text-light-grey">Published Works</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    End Grid/Pricing tables -->
+    <!-- </div> -->
+    </div>
+  <!-- End Portfolio Section -->
+  </section>
+
+  <!-- Subscribe Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="subscribe">
+    <h2 class="w3-text-light-grey">Subscribe</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <p>Sign up to recieve updates on Roland Cam upcoming releases.</p>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Based in the United Kingdom</p>
+    </div><br>
+    <p>Provide your name and email via the form below and Roland will be in touch.</p>
+
+    <form action="https://formspree.io/f/mkgbwkvy" method="POST" class="subscribe-form">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Your Email" required name="Email"></p>
+      <input type="text" name="_gotcha" style="display: none;">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SUBSCRIBE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+ <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

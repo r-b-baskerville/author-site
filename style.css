@@ -62,3 +62,24 @@
     font-weight: bold;
     text-align: center;
 }
+
+
+/* MOBILE ONLY FEATURES */
+
+.mobile-only {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+
+    }
+}

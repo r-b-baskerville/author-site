@@ -75,10 +75,18 @@
         display: block;
         max-width: 90vw;
         height: auto;
-        margin: 20px auto;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
         padding: 0;
         border: none;
 
+    }
+
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .title-text {

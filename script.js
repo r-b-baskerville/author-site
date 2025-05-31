@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextButton = document.querySelector(".carousel-button.next");
 
     let currentIndex = 0;
+    let autoSlide;
 
     function updateCarousel() {
         const slideWidth = slides[0].getBoundingClientRect().width;
@@ -23,5 +24,19 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCarousel();
     })
 
-    updateCarousel();
+    function startAutoSlide() {
+        autoSlide = setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+    }, 3000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlide);
+    }
+
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', startAutoSlide);
+
+
 })

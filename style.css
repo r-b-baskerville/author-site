@@ -8,6 +8,7 @@
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    overflow: visible;
 }
 
 .carousel-item {
@@ -23,6 +24,14 @@
     object-fit: contain;
     border-radius: 5px;
     margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center center;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05) translateY(-15px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .carousel-button {

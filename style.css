@@ -68,10 +68,6 @@
 
 .mobile-only {
     display: none;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
 }
 
 @media (max-width: 768px) {

@@ -62,3 +62,20 @@
     font-weight: bold;
     text-align: center;
 }
+
+
+/* MOBILE ONLY FEATURES */
+
+.mobile-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+
+    }
+}
